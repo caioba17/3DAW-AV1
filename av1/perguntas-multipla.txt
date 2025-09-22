@@ -1,2 +1,1 @@
-Quanto é 50+50?;20;40;10;100;100;D
-Quanto é 100+100?;20;200;500;1000;1000;B
+Qual é o animal?;Geladeira;Faca;Escada;Gato;Garrafa;D

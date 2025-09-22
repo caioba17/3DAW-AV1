@@ -15,7 +15,7 @@ if($method == 'POST') {
         $arqPerguntasMultipla = fopen("perguntas-multipla.txt", "w") or die("erro");
     }
 
-    $linha = $pergunta . ";" . $opc1 . ";" . $opc2 . ";" . $opc3 . ";" . $opc4 . ";" . $opc4 . ";" . $resposta . "\n";
+    $linha = $pergunta . ";" . $opc1 . ";" . $opc2 . ";" . $opc3 . ";" . $opc4 . ";" . $opc5 . ";" . $resposta . "\n";
     fwrite($arqPerguntasMultipla, $linha);
     fclose($arqPerguntasMultipla);
 

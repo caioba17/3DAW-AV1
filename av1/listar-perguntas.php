@@ -13,6 +13,7 @@
             <th>Resposta</th>  
             <th>Excluir</th>
             <th>Alterar</th>
+            <th>Ver</th>
         </tr>
         <?php 
         $arqPerguntasTexto = fopen("perguntas-texto.txt", "r") or die("erro");
@@ -32,7 +33,8 @@
                                 <input type='submit' value='Excluir'>
                             </form>
                         </td>
-                        <td><a href='alterar-pergunta-texto.php?email=" . $pergunta . "'>Alterar</a></td>
+                        <td><a href='alterar-pergunta-texto.php?pergunta=" . $pergunta . "'>Alterar</a></td>
+                        <td><a href='listar-uma-pergunta.php?pergunta=" . $pergunta . "&tipo=texto'>Ver</a></td>
                       </tr>";
             }
         }
@@ -52,6 +54,7 @@
             <th>Gabarito</th>  
             <th>Excluir</th>
             <th>Alterar</th>
+            <th>Ver</th>
         </tr>
         <?php 
         $arqPerguntasMultipla = fopen("perguntas-multipla.txt", "r") or die("erro");
@@ -81,7 +84,8 @@
                                 <input type='submit' value='Excluir'>
                             </form>
                         </td>
-                        <td><a href='alterar-pergunta-multipla.php?email=" . $pergunta . "'>Alterar</a></td>
+                        <td><a href='alterar-pergunta-multipla.php?pergunta=" . $pergunta . "'>Alterar</a></td>
+                        <td><a href='listar-uma-pergunta.php?pergunta=" . $pergunta . "&tipo=multipla'>Ver</a></td>
                       </tr>";
             }
         }
